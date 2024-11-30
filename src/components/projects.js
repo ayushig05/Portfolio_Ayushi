@@ -152,16 +152,16 @@ const Projects = () => {
   };
 
   return (
-    <div className="pb-4">
+    <div className="pb-4 w-full">
       <h2 className="my-5 text-center text-4xl font-spaceGrotesk font-bold">
         Projects
       </h2>
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         variants={containerVariants}
-        className="flex ml-52 justify-center items-center flex-wrap gap-8"
+        className="flex md:ml-52 justify-center items-center flex-wrap gap-8 px-4"
       >
         {PROJECTS.map(
           ({ id, title, image, description, technologies, links }) => (

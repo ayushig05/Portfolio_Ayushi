@@ -104,7 +104,7 @@ const Skills = () => {
           {skillItem.map((item, index) => (
             <motion.div
               key={index}
-              className="border border-purple-500 rounded-lg p-6 flex flex-col md:flex-row h-20 items-center text-center duration-300 hover:shadow-lg hover:shadow-purple-500/50"
+              className="border border-purple-500 rounded-lg p-6 flex flex-col md:flex-row md:h-20 items-center text-center duration-300 hover:shadow-lg hover:shadow-purple-500/50"
               variants={skillVariants}
               initial="hidden"
               animate="visible"

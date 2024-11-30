@@ -25,7 +25,7 @@ const Achievements = () => {
       title: "Participant - Dexterix 4.0",
       description:
         "Participated in the Dexterix 4.0 competition, gaining valuable experience in innovative tech challenges.",
-      date: "2024",
+      date: "April 2024",
     },
     {
       title: "Tech Member - TechnoJam",

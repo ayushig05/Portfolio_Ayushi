@@ -192,7 +192,7 @@ const Home = () => {
         </div>
 
         <motion.div
-          className="relative -mt-24 w-96 h-auto flex justify-center items-center"
+          className="relative w-96 h-auto flex justify-center items-center"
           variants={imageVariants}
           initial="hidden"
           animate="visible"
