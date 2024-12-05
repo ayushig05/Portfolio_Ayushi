@@ -16,9 +16,9 @@ const Achievements = () => {
       date: "September 2024",
     },
     {
-      title: "Developed VAAYU",
+      title: "Pre-Qualifiers in SIH 2024",
       description:
-        "Created a UAV-based ambient air monitoring system during SIH 2024, receiving optimistic feedback and recognition.",
+        "Created VAAYU (Vigilant Air Assessment and Yielding Unit), an UAV-based ambient air monitoring system, receiving optimistic feedback and recognition.",
       date: "August 2024",
     },
     {
