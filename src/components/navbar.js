@@ -79,13 +79,13 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-full h-16 px-4 flex justify-between items-center z-50 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+      className="fixed top-0 left-0 w-full h-16 px-4 flex justify-between items-center z-50 bg-white"
       variants={navVariants}
       initial="hidden"
       animate="visible"
     >
       <div>
-        <h1 className="text-5xl font-greatVibes ml-2">Ayushi</h1>
+        <h1 className="text-5xl font-greatVibes ml-2 text-black">Ayushi</h1>
       </div>
 
       {!nav && (
@@ -93,7 +93,7 @@ const Navbar = () => {
           {links.map(({ id, link, reload }) => (
             <motion.li
               key={id}
-              className="px-4 cursor-pointer capitalize font-spaceGrotesk font-medium text-gray-400 hover:scale-105 duration-200"
+              className="px-4 cursor-pointer capitalize font-spaceGrotesk font-medium text-gray-800 hover:scale-105 duration-200"
               variants={navVariants}
               initial="hidden"
               animate="visible"

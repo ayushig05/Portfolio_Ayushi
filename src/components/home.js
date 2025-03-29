@@ -84,7 +84,7 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center h-full px-8 gap-8">
         <div className="flex flex-col justify-center h-full w-3/4">
           <motion.h1
-            className="text-5xl font-bold mt-4"
+            className="text-5xl font-bold mt-4 text-gray-800"
             variants={textVariants}
             initial="hidden"
             animate="visible"
@@ -95,7 +95,7 @@ const Home = () => {
             </span>
           </motion.h1>
           <motion.h2
-            className="text-3xl mt-2 font-spaceGrotesk"
+            className="text-3xl mt-2 font-spaceGrotesk text-gray-800"
             variants={textVariants}
             initial="hidden"
             animate="visible"
@@ -108,7 +108,7 @@ const Home = () => {
             />
           </motion.h2>
           <motion.p
-            className="mt-4 font-spaceGrotesk"
+            className="mt-4 font-spaceGrotesk text-gray-800"
             variants={textVariants}
             initial="hidden"
             animate="visible"
@@ -117,12 +117,12 @@ const Home = () => {
           </motion.p>
 
           <motion.div
-            className="flex flex-wrap items-center gap-4 mt-8"
+            className="flex flex-wrap items-center gap-4 mt-8 text-gray-800"
             variants={buttonVariants}
             initial="hidden"
             animate="visible"
           >
-            <motion.a
+            <a
               href="/Ayushi_Gupta_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -134,7 +134,7 @@ const Home = () => {
               }}
             >
               Download CV
-            </motion.a>
+            </a>
 
             <div className="flex gap-4">
               <motion.a
@@ -191,7 +191,7 @@ const Home = () => {
           </motion.div>
         </div>
 
-        <motion.div
+        <div
           className="relative w-96 h-auto flex justify-center items-center"
           variants={imageVariants}
           initial="hidden"
@@ -203,7 +203,7 @@ const Home = () => {
             alt="Profile"
             className="w-full h-auto object-cover"
           />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

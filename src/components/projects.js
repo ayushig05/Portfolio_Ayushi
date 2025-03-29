@@ -5,63 +5,16 @@ import BUDGETBUDDY from "../assets/budgetbuddy.png";
 import WORDCRAFT from "../assets/dictionary_web.png";
 import TEXTIMAGE from "../assets/text-image.png";
 import VAAYU from "../assets/vaayu.png";
+import BOOKNEST from "../assets/book.png";
 
 const Projects = () => {
   const PROJECTS = [
     {
       id: 1,
-      title: "FireTalks",
-      image: FIRETALKS,
-      description:
-        "A real-time chat application that allows users to communicate instantly, featuring user authentication, message history, and notifications.",
-      technologies: ["React.js", "CSS", "Firebase"],
-      links: [
-        "https://fire-talks.vercel.app/",
-        "https://github.com/ayushig05/FireTalks",
-      ],
-    },
-    {
-      id: 2,
-      title: "BudgetBuddy",
-      image: BUDGETBUDDY,
-      description:
-        "An application to help users track their personal finances, manage expenses, and set budgets with visualized charts and reports.",
-      technologies: ["React.js", "TailwindCSS", "Firebase"],
-      links: [
-        "https://budget-buddy-rho-liart.vercel.app/",
-        "https://github.com/ayushig05/BudgetBuddy",
-      ],
-    },
-    {
-      id: 3,
-      title: "WordCraft",
-      image: WORDCRAFT,
-      description:
-        "An interactive web app designed to help users explore the meanings, synonyms, and pronunciations of words, along with an easy-to-use search feature.",
-      technologies: ["React.js", "CSS", "MaterialUI"],
-      links: [
-        "https://dictionary-web-app-pi-eight.vercel.app/",
-        "https://github.com/ayushig05/WordCraft",
-      ],
-    },
-    {
-      id: 4,
-      title: "AI-Image-App",
-      image: TEXTIMAGE,
-      description:
-        "A web application that leverages AI for generating and enhancing images, providing users with a creative platform for artistic expression.",
-      technologies: ["React.js", "CSS"],
-      links: [
-        "https://text-to-ai-image-app.vercel.app/",
-        "https://github.com/ayushig05/AI-Image-App",
-      ],
-    },
-    {
-      id: 5,
       title: "VAAYU (Vigilant Air Assessment and Yielding Unit)",
       image: VAAYU,
       description:
-        "A UAV-based ambient air monitoring system that helps track air quality in real time, offering insights and data analysis for improving environmental health.",
+        "Developed VAAYU, an autonomous UAV-based air quality monitoring system integrating sensors, GCS, and predictive analytics to detect and mitigate pollution effectively",
       technologies: [
         "React.js",
         "TailwindCSS",
@@ -70,8 +23,74 @@ const Projects = () => {
         "MongoDB",
       ],
       links: [
-        "",
+        // "",
         "https://github.com/ayushig05/Vigilant-Air-Assessment-and-Yielding-Unit",
+      ],
+    },
+    {
+      id: 2,
+      title: "BookNest",
+      image: BOOKNEST,
+      description:
+        "Developed a feature-rich Book Management System using the MERN stack, enabling seamless book cataloging, user favorites, order management, and real-time status tracking",
+      technologies: [
+        "React.js",
+        "TailwindCSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+      ],
+      links: [
+        // "",
+        "https://github.com/ayushig05/BookNest",
+      ],
+    },
+    {
+      id: 3,
+      title: "FireTalks",
+      image: FIRETALKS,
+      description:
+        "A real-time chat application that allows users to communicate instantly, featuring user authentication, message history, and notifications",
+      technologies: ["React.js", "CSS", "Firebase"],
+      links: [
+        // "https://fire-talks.vercel.app/",
+        "https://github.com/ayushig05/FireTalks",
+      ],
+    },
+    {
+      id: 4,
+      title: "BudgetBuddy",
+      image: BUDGETBUDDY,
+      description:
+        "An application to help users track their personal finances, manage expenses, and set budgets with visualized charts and reports",
+      technologies: ["React.js", "TailwindCSS", "Firebase"],
+      links: [
+        // "https://budget-buddy-rho-liart.vercel.app/",
+        "https://github.com/ayushig05/BudgetBuddy",
+      ],
+    },
+    {
+      id: 5,
+      title: "WordCraft",
+      image: WORDCRAFT,
+      description:
+        "An interactive web app designed to help users explore the meanings, synonyms, and pronunciations of words, along with an easy-to-use search feature",
+      technologies: ["React.js", "CSS", "MaterialUI"],
+      links: [
+        // "https://dictionary-web-app-pi-eight.vercel.app/",
+        "https://github.com/ayushig05/WordCraft",
+      ],
+    },
+    {
+      id: 6,
+      title: "AI-Image-App",
+      image: TEXTIMAGE,
+      description:
+        "A web application that leverages AI for generating and enhancing images, providing users with a creative platform for artistic expression",
+      technologies: ["React.js", "CSS"],
+      links: [
+        // "https://text-to-ai-image-app.vercel.app/",
+        "https://github.com/ayushig05/AI-Image-App",
       ],
     },
   ];
@@ -153,7 +172,7 @@ const Projects = () => {
 
   return (
     <div className="pb-4 w-full">
-      <h2 className="my-5 text-center text-4xl font-spaceGrotesk font-bold">
+      <h2 className="my-5 text-center text-4xl font-spaceGrotesk font-bold text-gray-800">
         Projects
       </h2>
       <motion.div
@@ -193,7 +212,7 @@ const Projects = () => {
                   </a>
                 </motion.h3>
                 <motion.p
-                  className="mb-4 text-gray-300 font-spaceGrotesk"
+                  className="mb-4 font-spaceGrotesk text-gray-600"
                   variants={techTagVariants}
                 >
                   {description}
@@ -202,7 +221,7 @@ const Projects = () => {
                   {technologies.map((tech, index) => (
                     <motion.span
                       key={index}
-                      className="inline-block rounded font-spaceGrotesk bg-gray-800 px-3 py-1 text-sm text-white shadow hover:bg-purple-500 transition"
+                      className="inline-block rounded font-spaceGrotesk cursor-pointer bg-gray-800 px-3 py-1 text-sm text-white shadow hover:bg-purple-500 transition"
                       variants={techTagVariants}
                       transition={{ delay: index * 0.1 }}
                     >
@@ -211,16 +230,16 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="mt-4">
-                  <a
+                  {/* <a
                     href={links[0]}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-purple-500 hover:underline mr-4"
                   >
                     Live Demo
-                  </a>
+                  </a> */}
                   <a
-                    href={links[1]}
+                    href={links[0]}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-purple-500 hover:underline"

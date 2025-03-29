@@ -4,33 +4,33 @@ import { motion } from "framer-motion";
 const Achievements = () => {
   const achievements = [
     {
+      title: "Winner SIH 2024",
+      description:
+        "Winner of Smart India Hackathon (SIH) 2024 for Problem Statement ID 1616, showcasing innovative problem-solving and technical excellence",
+      date: "August - December 2024",
+    },
+    {
       title: "1st Place - UPITS 2024",
       description:
-        "Won the first position at the UP International Trade Show 2024 for the VAAYU project. Awarded by Central Textile Minister Mr. Giriraj Singh and UP MSME Minister Mr. Rakesh Sachan.",
+        "Won the first position at the UP International Trade Show 2024 for the VAAYU project. Awarded by Central Textile Minister Mr. Giriraj Singh and UP MSME Minister Mr. Rakesh Sachan",
       date: "October 2024",
     },
     {
       title: "GirlScript Summer of Code 2024",
       description:
-        "Selected as a participant in the prestigious GirlScript Summer of Code Extended Edition.",
+        "Selected as a participant in the prestigious GirlScript Summer of Code Extended Edition",
       date: "September 2024",
-    },
-    {
-      title: "Pre-Qualifiers in SIH 2024",
-      description:
-        "Created VAAYU (Vigilant Air Assessment and Yielding Unit), an UAV-based ambient air monitoring system, receiving optimistic feedback and recognition.",
-      date: "August 2024",
     },
     {
       title: "Participant - Dexterix 4.0",
       description:
-        "Participated in the Dexterix 4.0 competition, gaining valuable experience in innovative tech challenges.",
+        "Participated in the Dexterix 4.0 competition, gaining valuable experience in innovative tech challenges",
       date: "April 2024",
     },
     {
       title: "Tech Member - TechnoJam",
       description:
-        "Actively contributed as a Tech Lead in TechnoJam, organizing workshops and mentoring team members.",
+        "Actively contributed as a Tech Lead in TechnoJam, organizing workshops and mentoring team members",
       date: "2022-present",
     },
   ];
@@ -38,10 +38,10 @@ const Achievements = () => {
   return (
     <section className="py-12 px-6 lg:px-20">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold font-spaceGrotesk text-center mb-8">
+        <h2 className="text-4xl font-bold font-spaceGrotesk text-center mb-8 text-gray-800">
           Achievements
         </h2>
-        <p className="text-lg text-gray-400 font-spaceGrotesk text-center mb-12">
+        <p className="text-lg font-spaceGrotesk text-center mb-12 text-gray-800">
           A showcase of my milestones, accomplishments, and experiences that
           have shaped my professional journey.
         </p>
@@ -67,13 +67,13 @@ const Achievements = () => {
                   marginRight: index % 2 === 0 ? "-1.5rem" : "0",
                 }}
               >
-                <h3 className="text-2xl font-semibold font-spaceGrotesk text-purple-400">
+                <h3 className="text-2xl font-semibold font-spaceGrotesk text-purple-500">
                   {achievement.title}
                 </h3>
-                <p className="text-gray-300 font-spaceGrotesk mt-2">
+                <p className="font-spaceGrotesk mt-2 text-gray-600">
                   {achievement.description}
                 </p>
-                <span className="text-gray-500 font-spaceGrotesk text-sm block mt-2">
+                <span className="font-spaceGrotesk text-sm block mt-2 text-gray-600">
                   {achievement.date}
                 </span>
               </div>

@@ -124,14 +124,14 @@ const Contact = () => {
             duration: 0.8,
           }}
         >
-          <h2 className="text-4xl font-bold font-spaceGrotesk text-white text-center md:text-left">
+          <h2 className="text-4xl font-bold font-spaceGrotesk text-center md:text-left text-gray-800">
             Contact
           </h2>
-          <p className="text-gray-400 text-center font-spaceGrotesk md:text-left">
+          <p className="text-center font-spaceGrotesk md:text-left text-gray-800">
             If you have any queries, feel free to reach out. Drop a message, and
             I'll get back to you as soon as possible.
           </p>
-          <div className="flex justify-center md:justify-start space-x-4 mt-4">
+          <div className="flex justify-center md:justify-start space-x-4 mt-4 text-gray-800">
             <a
               href="https://github.com/ayushig05"
               target="_blank"
