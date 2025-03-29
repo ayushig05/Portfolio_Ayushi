@@ -123,7 +123,7 @@ const Home = () => {
             animate="visible"
           >
             <a
-              href="/Ayushi_Gupta_CV.pdf"
+              href="/Ayushi_Gupta_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="w-fit h-14 px-4 py-3 font-spaceGrotesk items-center rounded-md cursor-pointer border-2 hover:shadow-lg hover:shadow-purple-500/50 border-purple-900 hover:text-purple-500 duration-300"
@@ -133,7 +133,7 @@ const Home = () => {
                 transition: { duration: 0.3 },
               }}
             >
-              Download CV
+              Download Resume
             </a>
 
             <div className="flex gap-4">
